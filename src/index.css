@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply min-h-screen w-full font-poppins;
+    }
+}
+
+@layer components {
+    .li-tag {
+        @apply md:text-lg font-semibold text-sm hover:text-green-500 cursor-pointer
+    }
+
+    .label {
+        @apply font-bold block;
+    }
+
+    .input {
+        @apply appearance-none mt-2 w-full py-2 px-2 focus:outline-none rounded-md border border-gray-200 focus:ring-1 focus:ring-green-500;
+    }
+
+    .error {
+        @apply font-bold text-red-500 mt-2
+    }
+    .message_wrapper {
+      @apply mt-[10px] py-0 px-[10px]
+    }
+    .message {
+      @apply inline-block max-w-md text-left p-1
+    }
+}
+  .message_container {
+    height: calc(100vh - 100px);
+  }
