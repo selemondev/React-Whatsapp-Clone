@@ -13,7 +13,6 @@ const Navbar = () => {
       await updateDoc(doc(db, "users", currentUser), {
         online: false,
       });
-      setLoading(false)
       navigate("/")
   }
   return (
