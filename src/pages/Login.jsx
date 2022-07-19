@@ -44,7 +44,10 @@ const Login = () => {
         navigate("/chat")
       } catch(err) {
         console.log(err.message)
-        setError(err.message)
+        setError(err.message);
+        setTimeout(() => {
+          setError("")
+        }, 3000)
       }
       setLoading(false)
     }
