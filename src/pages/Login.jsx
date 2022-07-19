@@ -43,8 +43,10 @@ const Login = () => {
         setLoading(false)
         navigate("/chat")
       } catch(err) {
+        console.log(err.message)
         setError(err.message)
       }
+      setLoading(false)
     }
   return (
     <div className='min-h-screen w-full grid grid-cols-2'>
